@@ -1,0 +1,485 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #F4F4F4;
+  max-width:100%;
+  background-color: rgba(0,0,0,0.85);
+  padding-bottom:50px;
+}
+
+a {
+  color : #FFFFFF;
+  text-decoration: none;
+  text-shadow:
+-1px 0 0 #000,
+1px 0 0 #000,
+0 1px 0 #000,
+0 -1px 0 #000;
+}
+a:link  {
+  font-weight: bold;
+  color : #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover  {
+  color : #F4F4F4;
+  text-decoration: none;
+}
+
+a:active {
+  color : #F4F4F4;
+  text-decoration: none;
+}
+
+a:visited {
+  color : #F4F4F4;
+  text-decoration: none;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+  max-width:100%;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 600px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 600px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.maincard {
+  padding: 200px 0 200px 0;
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  background-size:cover
+}
+
+.carcard {
+  background-repeat:no-repeat;
+  background-attachment:scroll;
+  background-position:center center;
+  background-size:cover
+}
+
+.darken-pseudo {
+  position: relative;
+}
+
+.darken-pseudo:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.z1 {
+  z-index: 1;
+}
+.section-text {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.6);
+}
+.section-text-main {
+  font-size: 48px;
+  font-weight: bold;
+}
+.width50{
+  width: 50%;
+}
+.call-text-md {
+  font-size: 16px;
+}
+
+.paddingB{
+  padding-bottom: 10px;
+}
+
+#localD{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.whiteBG{
+  background-color: rgba(255, 255, 255, 1);
+}
+.blackBG{
+  background-color: rgb(241,237,233);
+}
+.blackBG2{
+  background-color: rgba(0,0,0,0.85);
+}
+.shadowLayer{
+  box-shadow: 5px 5px 5px 5px;
+}
+#testing {
+background-image: url("../testing.jpeg");
+}
+
+#calling {
+background-image: url("../calling.jpg");
+}
+
+#mapping {
+background-image: url("../mapping.jpg");
+}
+
+#faq {
+background-image: url("../faq.jpg");
+}
+
+#car01 {
+background-image: url("../car01.jpg");
+}
+#car02 {
+background-image: url("../car02.jpg");
+}
+#car03 {
+background-image: url("../car03.jpg");
+}
+
+.turnonGPSplz {
+  background-color: red;
+  color: "#FFFFFF";
+  padding: 100px 0 100px 0;
+  height: 100%;
+}
+
+.pdt {
+  padding: 10px 10px 10px 10px;
+}
+
+.laptopPadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+table, th, td {
+  border: none;
+  bordor-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #555555;
+}
+
+
+th {
+  background-color: #555555;
+  color: #FFFFFF;
+}
+
+.bdr{
+  border-right: 1px dotted #555555;
+}
+
+.scoreContainer{
+  padding-top:80px;
+  padding-bottom:40px;
+}
+.scoreBigText{
+  font-size:64px;
+  font-weight: 600;
+}
+.scoreSmallText{
+  font-size:32px;
+}
+.noPaddingMargin{
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.heig{
+  height: 18px;
+}
+
+
+.floatLeft{
+  float:left;
+}
+
+.floatRight{
+  float:right;
+}
+
+.containerBuild{
+  padding:20px 0 20px 0;
+}
+
+.rowBuild{
+  padding: 5px 0 5px 0;
+  margin-left: 25px; margin-right: 25px;
+}
+
+.callBuild{
+  margin-left: 15px; margin-right: 15px;
+}
+
+.borderBottom1px{
+  border-bottom: 1px solid #555555;
+}
+
+.faqPadding {
+  padding-top : 25px;
+}
+
+.textBigBuild{
+  font-size:18px;
+
+}
+.textSmallBuild{
+  font-size:12px;
+}
+.mainTextmain{
+  font-size:24px;
+}
+.mainTextsub{
+  font-size:16px;
+  line-height: 150%;
+}
+.faqText{
+  font-size:18px;
+  line-height: 150%;
+}
+.faqTextMain{
+  font-size:22px;
+  font-weight: bold;
+  line-height: 180%;
+}
+@media (min-width: 768px) {
+  #testTable {
+    width: 750px;
+  }
+  .containerBuild{
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  #testTable {
+    width: 970px;
+  }
+  .containerBuild{
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #testTable {
+    width: 970px;
+  }
+  .containerBuild{
+    width: 970px;
+  }
+}
+
+.marginTB {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mobile-break {
+  display : block;
+}
+
+.mobileDisplay {
+  display : block;
+}
+.laptopDisplay {
+  display : none;
+}
+.padding100 {
+  padding-top : 100px;
+  padding-bottom : 100px;
+}
+
+.mobilePadding100 {
+  padding-top : 0px;
+  padding-bottom : 100px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 900px) {
+  .mobile-break {
+    display : none;
+  }
+}
+@media (min-width: 768px) {
+  .mainTextmain{
+    font-size:48px;
+  }
+  .mainTextsub{
+    font-size:24px;
+  }
+  .mobileDisplay {
+    display : none;
+  }
+  .laptopDisplay {
+    display : block;
+  }
+  .mobilePadding100 {
+    padding-top : 100px;
+    padding-bottom : 100px;
+  }
+  .laptopPadding {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .section-text {
+    font-weight: 500;
+    font-size: 21px;
+  }
+
+  .call-text-md {
+    font-size: 21px;
+  }
+
+  .section-text-main {
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  .textBigBuild{
+    font-size:32px;
+  }
+  .textSmallBuild{
+    font-size:16px;
+  }
+  .heig{
+    height:100%;
+  }
+}
+.btn-dark{
+color:#fff;
+background-color:#343a40;
+border-color:#343a40;
+}
+.btn-dark:hover{
+color:#EEE;
+}
