@@ -17,7 +17,7 @@ function getLocation() {
 getLocation();
 
 function kakaoObj(a){
-  this.content='<div>'+a.name+'<br>'+a.subname+'</div>';
+  this.content='<div class="text-center mapFont">'+a.name+'<br>'+a.subname+'</div>';
   this.latlng= new kakao.maps.LatLng(a.lat, a.lng);
 }
 

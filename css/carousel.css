@@ -56,6 +56,10 @@ a:visited {
   z-index: 20;
 }
 
+.mapFont {
+  color: black;
+}
+
 /* Flip around the padding for proper display in narrow viewports */
 .navbar-wrapper > .container {
   padding-right: 0;
